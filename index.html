@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navBar">
+        <div class="navTitle">
+          <i class="fa-solid fa-c fa-xl fa-center"></i>
+          <h2>han'sNote</h2>
+        </div>
+        <ul class="navList">
+          <li>
+            <a href="#main" style="font-size: larger;">မိန်းသွင်း</a>
+          </li>
+          <li>
+            <a href="#weekend" style="font-size: larger;">ကော်တွက်</a>
+          </li>
+          <li>
+            <a href="#" style="font-size: larger;">Others</a>
+          </li>
+          <li>
+            <a href="#" style="font-size: larger;">About us</a>
+          </li>
+          <li>
+            <a href="#" style="font-size: larger;">Contact us</a>
+          </li>
+        </ul>
+        <div class="navMenu">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+      </div>
+      <div class="hidden-navList-box">
+        <ul class="hidden-navList">
+          <li>
+            <a href="#main" class="hidden-nav-list-a">မိန်းသွင်း</a>
+          </li>
+          <li>
+            <a href="#weekend" class="hidden-nav-list-a">ကော်တွက်</a>
+          </li>
+          <li>
+            <a href="#" class="hidden-nav-list-a">Others</a>
+          </li>
+          <li>
+            <a href="#" class="hidden-nav-list-a">About us</a>
+          </li>
+          <li>
+            <a href="#" class="hidden-nav-list-a">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="weekend">
+      <div class="clear-all-box dn">
+        <p>Are you sure to delete all saved items?</p>
+        <div>
+          <button class="clear-all-delete-btn">Delete</button>
+          <button class="clear-all-cancel-btn">Cancel</button>
+        </div>
+      </div>
+      <div class="weekend-box-main">
+        <div class="weekend-box-parent">
+          <div class="name-box">
+            <input class="name" type="text" placeholder="Customer Name" />
+          </div>
+          <div>
+            <table class="weekend-table">
+              <tbody>
+                <tr>
+                  <td>Monday(AM)</td>
+                  <td>
+                    <input
+                      type="text"
+                      id="monday-am"
+                      value="0"
+                      class="bc-blue"
+                    />
+                  </td>
+                  <td>P:</td>
+                  <td class="tl">
+                    <input
+                      type="text"
+                      id="monday-am-p"
+                      value="0"
+                      class="bc-blue"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>(PM)</td>
+                  <td>
+                    <input
+                      type="text"
+                      value="0"
+                      id="monday-pm"
+                      class="bc-yellow"
+                    />
+                  </td>
+                  <td>P:</td>
+                  <td class="tl">
+                    <input
+                      type="text"
+                      id="monday-pm-p"
+                      value="0"
+                      class="bc-yellow"
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Tuesday(AM)</td>
+                  <td>
+                    <input
+                      type="text"
+                      value="0"
+                      id="tuesday-am"
+                      class="bc-blue"
+                    />
+                  </td>
+                  <td>P:</td>
+                  <td class="tl">
+                    <input
+                      type="text"
+                      id="tuesday-am-p"
+                      value="0"
+                      class="bc-blue"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>(PM)</td>
+                  <td>
+                    <input
+                      type="text"
+                      value="0"
+                      id="tuesday-pm"
+                      class="bc-yellow"
+                    />
+                  </td>
+                  <td>P:</td>
+                  <td class="tl">
+                    <input
+                      type="text"
+                      id="tuesday-pm-p"
+                      value="0"
+                      class="bc-yellow"
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Wednesday(AM)</td>
+                  <td>
+                    <input
+                      type="text"
+                      value="0"
+                      id="wednesday-am"
+                      class="bc-blue"
+                    />
+                  </td>
+                  <td>P:</td>
+                  <td class="tl">
+                    <input
+                      type="text"
+                      id="wednesday-am-p"
+                      value="0"
+                      class="bc-blue"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>(PM)</td>
+                  <td>
+                    <input
+                      type="text"
+                      value="0"
+                      id="wednesday-pm"
+                      class="bc-yellow"
+                    />
+                  </td>
+                  <td>P:</td>
+                  <td class="tl">
+                    <input
+                      type="text"
+                      id="wednesday-pm-p"
+                      value="0"
+                      class="bc-yellow"
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Thursday(AM)</td>
+                  <td>
+                    <input
+                      type="text"
+                      value="0"
+                      id="thursday-am"
+                      class="bc-blue"
+                    />
+                  </td>
+                  <td>P:</td>
+                  <td class="tl">
+                    <input
+                      type="text"
+                      id="thursday-am-p"
+                      value="0"
+                      class="bc-blue"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>(PM)</td>
+                  <td>
+                    <input
+                      type="text"
+                      value="0"
+                      id="thursday-pm"
+                      class="bc-yellow"
+                    />
+                  </td>
+                  <td>P:</td>
+                  <td class="tl">
+                    <input
+                      type="text"
+                      id="thursday-pm-p"
+                      value="0"
+                      class="bc-yellow"
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Friday(AM)</td>
+                  <td>
+                    <input
+                      type="text"
+                      value="0"
+                      id="friday-am"
+                      class="bc-blue"
+                    />
+                  </td>
+                  <td>P:</td>
+                  <td class="tl">
+                    <input
+                      type="text"
+                      id="friday-am-p"
+                      value="0"
+                      class="bc-blue"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>(PM)</td>
+                  <td>
+                    <input
+                      type="text"
+                      value="0"
+                      id="friday-pm"
+                      class="bc-yellow"
+                    />
+                  </td>
+                  <td>P:</td>
+                  <td class="tl">
+                    <input
+                      type="text"
+                      id="friday-pm-p"
+                      value="0"
+                      class="bc-yellow"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Total Amount</td>
+                  <td>
+                    <input
+                      type="text"
+                      name=""
+                      id="total-amount"
+                      value="0"
+                      class="bc-blue"
+                    />
+                  </td>
+                  <td>Total P:</td>
+                  <td class="tl">
+                    <input type="text" id="total-p" value="0" class="bc-blue" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <table class="weekend-table-2">
+              <tbody>
+                <tr>
+                  <td>Total Amount:</td>
+                  <td>
+                    <input type="text" id="total-amount-2" placeholder="---" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Commission
+                    <input
+                      type="text"
+                      id="commission-sa"
+                      value="10"
+                      class="small-input"
+                    />
+                    %
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      id="commission-total"
+                      placeholder="---"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="p-css">Total P</p>
+                    <input
+                      type="text"
+                      id="p-sa"
+                      value="80"
+                      class="small-input"
+                    />
+                    <strong>ဆ</strong>
+                  </td>
+                  <td>
+                    <input type="text" id="total-p-x" placeholder="---" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Final Result:</td>
+                  <td>
+                    <input type="text" id="final-result" placeholder="---" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="clear-all-btn">Clear All</button>
+          <button class="calculate-btn">Calculate</button>
+          <button class="save-btn">Save</button>
+        </div>
+        <div class="weekend-box-parent-2"></div>
+      </div>
+    </section>
+    <section id="main"><div style="height: 1000px">Not done yet!</div></section>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
