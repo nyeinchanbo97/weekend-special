@@ -77,8 +77,9 @@
   padding: 5px 0px;
   margin: 6px 50px;
   /* border: 1px solid #14213d; */
-  border-radius: 5px;
-  box-shadow: 0px 0px 15px 2px #5f9ebb;
+  /* border-radius: 5px; */
+  border-bottom: 1px solid black;
+  /* box-shadow: 0px 0px 15px 2px #5f9ebb; */
 
 }
 .hidden-navList li a {
@@ -97,6 +98,25 @@
     flex-direction: row;
     justify-content: space-around;
  
+}
+.instruction-box{
+  position: absolute;
+  display: none;
+  overflow: scroll;
+  top: -250px;
+  border: 1px solid black;
+  width: 600px;
+  height: 280px;
+  box-sizing: border-box;
+  padding: 10px 60px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.instruction-box h2{
+  text-decoration: underline;
+}
+.instruction-box ol li{
+  padding: 5px 0px;
 }
 .weekend-box-parent{
     width: 70%;
@@ -118,7 +138,22 @@
   flex-direction: column;
   align-items: center;
   padding-top: 70px;
+  position: relative;
   /* justify-content: space-around; */
+}
+.saved-items{
+  display: none;
+}
+.close-saved-items{
+  display: none;
+  position: absolute;
+  bottom: -30px;
+  right: 0px;
+  width: 80px;
+  height: 25px;
+  border: none;
+  font-weight: bold;
+  background-color: #8ecae6;
 }
 .save-item-parent{
   display: flex;
@@ -341,16 +376,41 @@
     margin-top: 0px;
     /* transform: translateY(5px); */
   }
+  header{
+    position: relative;
+    z-index: 1;
+  }
+  .instruction-box{
+    display: block;
+  }
   .weekend-box-parent-2{
     position: fixed;
-    border: 3px dotted #8ecae6;
-    top: -290px;
+    /* border: 3px dotted #8ecae6; */
+    background-color:#ced8dd;
+    top: -639px;
     width: 600px;
-    height: 290px;
+    height: 300px;
+    transition: all 0.5s ease-in;
     display: grid;
     grid-template-columns: repeat(3,200px);
     align-items: flex-start;
     overflow: scroll;
+  }
+  .saved-items{
+    display: block;
+    position: relative;
+    z-index: 1;
+    top: -320px;
+    width: 160px;
+    background-color: #8ecae6;
+    color: black;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .close-saved-items{
+    display: block;
   }
   .save-item-parent{
     width: 150px;
