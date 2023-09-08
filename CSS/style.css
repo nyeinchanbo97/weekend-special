@@ -104,7 +104,8 @@
   display: none;
   overflow: scroll;
   top: -250px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  box-shadow: 0 0 10px #8ecae6;
   width: 600px;
   height: 280px;
   box-sizing: border-box;
@@ -112,6 +113,65 @@
   font-weight: 300;
   letter-spacing: 1px;
 }
+.button-in-wbp-2{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 15px;
+  justify-content: space-evenly;
+}
+.button-in-wbp-2 button{
+  width: 150px;
+  padding: 2px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  box-shadow: 0 0 5px #8ecae6;
+  transition: all 300ms ;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 1000;
+}
+.button-in-wbp-2 .instruction-btn{
+  background-color: #8ecae6;
+}
+.button-in-wbp-2 button:hover{
+  transform: translateY(-3px);
+}
+.fixed-instruction-box{
+  width: 450px;
+  padding-top: 7px;
+  position:absolute;
+  overflow: hidden;
+  right: 0px;
+  top: 115px;
+  z-index: 1000;
+}
+.instruction-box-big{
+  height: 390px;
+  overflow: scroll;
+  margin: 5px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #8ecae6;
+  padding: 20px 10px 20px 40px;
+  background-color: #8ecae6;
+  transition: transform 300ms;
+
+  /* position: absolute; */
+  /* top: 50px; */
+  /* pointer-events: none; */
+  /* z-index: 100; */
+  /* transform: translateX(400px); */
+}
+.instruction-box-big li{
+  margin-bottom: 10px;
+}
+
 .instruction-box h2{
   text-decoration: underline;
 }
@@ -131,16 +191,21 @@
 
 }
 .weekend-box-parent-2{
-  width: 30%;
-  height: 500px;
-  overflow: scroll;
+  /* border: 3px solid black; */
+  width: 40%;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 70px;
+  margin-top: 70px;
   position: relative;
+  z-index: 100;
+  /* background-color: #d9dee0; */
   /* justify-content: space-around; */
 }
+
 .saved-items{
   display: none;
 }
@@ -343,7 +408,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 15px;
-  z-index: 1;
+  z-index: 1000000;
 }
 .dn{
   display: none;
@@ -383,7 +448,12 @@
   .instruction-box{
     display: block;
   }
+  .fixed-instruction-box{
+    display: none;
+  }
   .weekend-box-parent-2{
+    margin-top: 0;
+    padding-top: 70px;
     position: fixed;
     /* border: 3px dotted #8ecae6; */
     background-color:#ced8dd;

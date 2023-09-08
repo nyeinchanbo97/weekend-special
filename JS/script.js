@@ -253,6 +253,7 @@ saveBtn.addEventListener("click", () => {
       apple -= 1;
       localStorage.setItem("a", apple);
       location.reload();
+      
     });
   }
 
@@ -368,3 +369,28 @@ savedItemsBtn.addEventListener("click", () => {
     instructionBox.style.display = "none";
   }
 });
+
+
+// for big screen > instruction-btn and saved items btn 
+
+const instructionBtn = document.getElementsByClassName("instruction-btn")[0];
+const instructionBoxBig = document.getElementsByClassName("instruction-box-big")[0];
+const fixedInstructionBox = document.getElementsByClassName("fixed-instruction-box")[0];
+const savedItemsBig = document.getElementsByClassName("saved-items-big")[0];
+
+savedItemsBig.addEventListener("click",() => {
+  instructionBoxBig.style.transform = "translateX(500px)"
+  fixedInstructionBox.style.pointerEvents = "none";
+  savedItemsBig.style.backgroundColor = "#8ecae6";
+  instructionBtn.style.backgroundColor = "white";
+
+})
+
+instructionBtn.addEventListener("click",() => {
+  instructionBoxBig.style.transform = "translateX(0px)"
+  fixedInstructionBox.style.pointerEvents = "all";
+  instructionBtn.style.backgroundColor = "#8ecae6";
+  savedItemsBig.style.backgroundColor = "white";
+
+
+})
