@@ -90,8 +90,10 @@ calculateBtn.addEventListener("click", () => {
   let p3 = parseInt(p1) + parseInt(p2);
   totalP.value = p3;
   //total commission
-  let corSa = parseInt(commissionSa.value);
+  let corSa = commissionSa.value * 1;
+  console.log(corSa);
   commissionTotal.value = totalValue * (corSa / 100);
+  console.log(commissionTotal.value);
   //total p sa
   totalPx.value = p3 * parseInt(pSa.value);
   //final result
@@ -204,8 +206,8 @@ saveBtn.addEventListener("click", () => {
     alert("please fill the name");
     return;
   }
-  if (obj1.name.length > 9){
-    alert("Customer name should not exceed more than 9 character!")
+  if (obj1.name.length > 9) {
+    alert("Customer name should not exceed more than 9 character!");
     return;
   }
 
@@ -332,17 +334,17 @@ clearAllDeleteBtn.addEventListener("click", () => {
   location.reload();
 });
 
-//to make the button which can show and hide saved items box 
-//and to make the instruction 
+//to make the button which can show and hide saved items box
+//and to make the instruction
 //so the space for saved items box will only show when the user click the button
 //if not the space will be for instruction box
- 
+
 const savedItemsBtn = document.getElementsByClassName("saved-items")[0];
 const savedItemsIcon = document.getElementsByClassName("saved-items-icon")[0];
 const instructionBox = document.getElementsByClassName("instruction-box")[0];
 
-savedItemsBtn.addEventListener("click",()=>{
-  if (weekendBoxParent2.classList.contains("isOpen")){
+savedItemsBtn.addEventListener("click", () => {
+  if (weekendBoxParent2.classList.contains("isOpen")) {
     weekendBoxParent2.style.top = "-639px";
     savedItemsIcon.classList.remove("fa-chevron-up");
     savedItemsIcon.classList.add("fa-chevron-down");
@@ -352,9 +354,9 @@ savedItemsBtn.addEventListener("click",()=>{
       savedItemsBtn.style.display = "block";
     }, 500);
     setTimeout(() => {
-    instructionBox.style.display = "block";
+      instructionBox.style.display = "block";
     }, 500);
-  }else{
+  } else {
     weekendBoxParent2.style.top = "-270px";
     savedItemsIcon.classList.remove("fa-chevron-down");
     savedItemsIcon.classList.add("fa-chevron-up");
@@ -365,4 +367,4 @@ savedItemsBtn.addEventListener("click",()=>{
     }, 500);
     instructionBox.style.display = "none";
   }
-})
+});
